@@ -91,4 +91,4 @@ Here's a link to my video result on Youtube:
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-The solution works when lane lines are visually distiguishable from the backgrounds by the combinations of colors and gradients. This is a pure computer vision appproach, where threholds have to be carefully chosen to reach some acceptable results. The method is not robust for practical self-driving on complex road or weather conditions. I expect the future lessons will address the issue with more robust machine learning techniques.
+The solution works when lane lines are visually distinguishable from the backgrounds by the combinations of colors and gradients. This is a pure computer vision approach, where thresholds have to be carefully chosen to reach some acceptable results. The method is not robust for practical self-driving on complex road or weather conditions. I expect the future lessons will address the issue with more robust machine learning techniques.
