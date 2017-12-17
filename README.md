@@ -90,7 +90,7 @@ I implemented this step in the function `draw_lane()`.  Here is an example of my
 
 Here's a link to my video result on Youtube:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Xzjmd7tMCKc/0.jpg)](https://www.youtube.com/watch?v=Xzjmd7tMCKc)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/vYMJuPanJ6k/0.jpg)](https://www.youtube.com/watch?v=vYMJuPanJ6k)
 
 ### Discussion
 
