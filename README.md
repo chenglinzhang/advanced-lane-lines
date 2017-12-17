@@ -18,6 +18,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/chessboard_points.png "Chessboard Points"
+[image11]: ./examples/calibration1_undistort.png "Calibration 1 Undistorted"
 [image2]: ./examples/straight_lines2_undistort.png "Straight Lines 2 Undistorted"
 [image3]: ./examples/test4_color_gradient.png "Test 4 Color Gradient"
 [image4]: ./examples/straight_lines2_birds_eye.png "Stright Line 2 Birds Eye"
@@ -36,7 +37,11 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 #### 1. Provide an example of a distortion-corrected image.
 
-I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained a list of undistorted images from the given test images. An example follows: 
+I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained a list of undistorted images from the given test images. An example of undistorted chessboard image follows: 
+
+![alt text][image11]
+
+An example of undistorted test image follows:
 
 ![alt text][image2]
 
@@ -71,7 +76,7 @@ An optimization can be made to search in a margin around the line positions in t
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-The left and right curvatures of the lane are calcualted from the derivatives of the left_fit and right_fit polynomials with a function `measure_curvature()`.
+The left and right curvatures of the lane are calcualted from the derivatives of the left_fit and right_fit polynomials with a function `measure_curvature()`. I calculated the curvatures in image pixels first, then used another polyfill to calculate the curvatures in world space.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
